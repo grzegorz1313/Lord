@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Władca Pierścieni</title>
+	<meta name="description" content="Serwis poświęcony miłośnikom trylogii filmowej 'Władcy Pierścieni' J.R.R. Tolkiena" />
+	<meta name="keywords" content="władca, pierścieni, trylogia, tolkien, fantazy" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link rel = "preconnect" href = "https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#gandalf'), 500); });
+			$('#link2').click(function() { $.scrollTo($('#aragorn'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#legolas'), 500); });
+			$('#link4').click(function() { $.scrollTo($('#gimli'), 500); });
+			$('#link5').click(function() { $.scrollTo($('#frodo'), 500); });
+			$('#link6').click(function() { $.scrollTo($('#sam'), 500); });
+			$('#link7').click(function() { $.scrollTo($('#pippin'), 500); });
+			$('#link8').click(function() { $.scrollTo($('#merry'), 500); });
+			$('#link9').click(function() { $.scrollTo($('#boromir'), 500); });
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+			
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		);
+		
+	</script>
+	
+</head>
+
+<body>
+
+<div id="logo">
+			Władca Pierścieni
+		</div>
+		
+		<a href="#" class="scrollup"></a>
+		
+		<div class="menu">
+			<ol>
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a href="tolkien.html">J.J.R Tolkien</a></li>
+				<li><a href="fabula.html">Fabuła</a>
+					<ul>
+						<li><a href="wladca.html">Dróżyna Pierścienia</a></li>
+						<li><a href="wieze.html">Dwie wieże</a></li>
+						<li><a href="powrot.html">Powrót Króla</a></li>
+					</ul>
+				</li>
+				<li><a href="adaptacje.html">Adaptacje</a>
+					<ul>
+						<li><a href="filmy.html">Filmy</a></li>
+						<li><a href="gry.html">Gry</a></li>
+					</ul>
+				</li>
+				<li><a href="postacie.html">Postacie</a>
+				<ul>
+						<li><a href="pozytywne.html">Pozytywne</a></li>
+						<li><a href="negatywne.html">Negatywne</a></li>
+					</ul>
+				</li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="mapa.html">Mapa świata</a></li>
+			</ol>
+		</div>
+		
+	<div id="container">
+		
+		<div id="topbar">
+			<div id="topbarL">
+				<img src="img/ring.png">
+			</div>
+			<div id="topbarR">
+				<span class="bigtitle">O witrynie słów kilka</span>
+				<div style="height: 15px;"></div>
+				Trylogia 'Władcy Pierścieni' napisana przez J.J.R Tolkiena jest bez wątpienia książką ponadczasową. Dlatego trudno się dziwić, że doczekała się ekranizacji. Ta strona została stworzona z pasji i podziwu dla twórczości J.J.R. Tolkiena.
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		
+		<div id="sidebar">
+			<ol>
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a href="tolkien.html">J.J.R Tolkien</a></li>
+				<li><a href="fabula.html">Fabuła</a>
+					<ul>
+						<li><a href="wladca.html">Dróżyna Pierścienia</a></li>
+						<li><a href="wieze.html">Dwie wieże</a></li>
+						<li><a href="powrot.html">Powrót Króla</a></li>
+					</ul>
+				</li>
+				<li><a href="adaptacje.html">Adaptacje</a>
+					<ul>
+						<li><a href="filmy.html">Filmy</a></li>
+						<li><a href="gry.html">Gry</a></li>
+					</ul>
+				</li>
+				<li><a href="postacie.html">Postacie</a>
+				<ul>
+						<li><a href="pozytywne.html">Pozytywne</a></li>
+						<li><a href="negatywne.html">Negatywne</a></li>
+					</ul>
+				</li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="mapa.html">Mapa świata</a></li>
+			</ol>
+		</div>
+		
+		<div id="sidebarR">
+			<img src="img/reklama.jpg" />
+		</div>
+		
+		<div id="content">
+			<span class="bigtitle">Pozytywne</span>
+			
+			<div class="dottedline"></div>
+			
+			<h3>Drużyna Pierścienia</h3> to w powieści Władca Pierścieni autorstwa J. R. R. Tolkiena nazwa określająca dziewięciu wędrowców, którzy wyruszają do Góry Przeznaczenia w Mordorze, aby zniszczyć Jedyny Pierścień. W Drużynie znaleźli się przedstawiciele tych wszystkich Wolnych Ludów Śródziemia, które zdecydowały się stanąć naprzeciw rosnącej sile Saurona. Decyzja o jej utworzeniu zapadła w trakcie Narady u Elronda, zaś dokładną liczbę członków Drużyny (dziewięciu wobec dziewięciu Upiorów Pierścienia) i jej skład osobowy ustalone zostały wkrótce po zakończeniu Narady. 
+
+			<br />W skład wchodzą:
+
+			<ul>
+					<li><a id="link1" href="#">Gandalf</a></li>
+					<li><a id="link2" href="#">Aragorn</a></li>
+					<li><a id="link3" href="#">Legolas</a></li>
+					<li><a id="link4" href="#">Gimli</a></li>
+					<li><a id="link5" href="#">Frodo</a></li>
+					<li><a id="link6" href="#">Sam</a></li>
+					<li><a id="link7" href="#">Pippin</a></li>
+					<li><a id="link8" href="#">Merry</a></li>
+					<li><a id="link9" href="#">Boromir</a></li>
+			</ul>
+			
+			<h3 id="gandalf">Gandalf</h3>
+			Zwany był także Mithrandirem, czyli Szarym Pielgrzymem, był jednym z Majarów o imieniu Olórin. Uchodził za najmądrzejszego wśród innych Majarów mieszkających w Amanie, przebywał często w Lórien, wiele wędrował i nierzadko odwiedzał dom Nienny – od niej to nauczył się on cierpliwości, spokoju oraz umiłowania dla wszystkich istot zamieszkujących Ardę. Olórin kochał Quendich, nawiedzał ich w postaci niewidzialnej lub w postaci jednego z nich i czynił to w taki sposób, że Pierworodni nie wiedzieli, skąd pochodzą wizje oraz pomysły. Z czasem Olórin został przyjacielem wszystkich Dzieci Ilúvatara, a ci, którzy słuchali jego rad, dźwigali się z rozpaczy i odpychali od siebie wizje ciemności.
+			
+			<h3 id="aragorn">Aragorn</h3>
+			Był Dúnadanem, Strażnikiem Północy, synem Arathorna II i Gilraeny. Był trzydziestym dziewiątym w linii prostej potomkiem Isildura, syna Elendila, założycieli dynastii królów Gondoru i Arnoru. Nazwany został po swym przodku, Aragornie I. Jako że w jego żyłach płynęła krew trzech ras: ludzi, elfów i Majarów (przez Melianę i Elwego, Lúthien i Berena oraz Idril i Tuora), żył znacznie dłużej niż zwykli ludzie.
+			
+			<h3 id="legolas">Legolas</h3>
+			Był synem króla Elfów Leśnych z Mrocznej Puszczy, Thranduila. Dokładny wiek Legolasa nie został podany przez Tolkiena. Pierwszy raz pojawił się w powieści na Naradzie u Elronda (3019 rok Trzeciej Ery), na którą przybył jako wysłannik swojego ojca, przynosząc wieści o ucieczce Golluma z elfickiej niewoli. Elrond wybrał go na członka Drużyny Pierścienia, w której reprezentować miał rasę elfów.
+			W Lothlórien Galadriela podarowała mu łuk o cięciwie z włosów elfów i kołczan pełen strzał. Po rozbiciu Drużyny Pierścienia ruszył z Aragornem i Gimlim w pościg za Uruk-hai, którzy porwali Meriadoka i Peregrina, a następnie wziął udział w bitwie o Rogaty Gród. W czasie wyprawy Szarej Drużyny na bitwę na polach Pelennoru w Lebenninie usłyszał krzyk mew, który obudził w nim tęsknotę za Eldamarem. Od tej pory nieustanie ciągnęło go do morza.
+			
+			<h3 id="gimli">Gimli</h3>
+			Należał do królewskiego rodu i był spokrewniony m.in. z Thorinem Dębową Tarczą. Nie brał udziału w wyprawie pod Samotną Górę (Hobbit, czyli tam i z powrotem), a na naradę u Elronda przybył jako syn Glóina – reprezentanta tego właśnie królestwa (którym wówczas władał Dáin II Żelazna Stopa). Na naradzie został wybrany członkiem Drużyny Pierścienia, której zadaniem było pomóc Powiernikowi Pierścienia, Frodowi Bagginsowi, zniszczyć Pierścień Władzy.
+			Dzielił losy Drużyny Pierścienia aż do jej rozpadu. Potem wraz z Aragornem i Legolasem ścigał orków Sarumana, aby uwolnić Meriadoka i Peregrina. Brał udział w bitwie o Rogaty Gród, przeszedł Ścieżkę Umarłych, walczył w Pelargirze, na polach Pelennoru i pod Morannonem. Walcząc w Helmowym Jarze wygrał zawody z Legolasem w liczbie zabitych orków (42 Gimlego do 41 Legolasa). Choć początkowo był mocno uprzedzony do elfa, z czasem jednak zaprzyjaźnili się, a Gimli otrzymał tytuł Przyjaciela Elfów.
+			Galadriela, królowa lasu Lothlórien, podarowała mu trzy złociste włosy z jej głowy.
+			
+			<h3 id="frodo">Frodo</h3>
+			Był jedynym synem Droga i Primuli z Brandybucków. Młodość spędził w Bucklandzie, po śmierci rodziców w 2980 został adoptowany przez Bilba Bagginsa i sprowadził się do Bag End. W Shire przyjaźnił się z Peregrinem Tukiem, Meriadokiem Brandybuckiem, Folko Boffinem i Fredegarem Bolgerem.
+			Po wyruszeniu Bilba w ostatnią wyprawę (3001 rok Trzeciej Ery) mieszkał samotnie do 3018 roku. Sprzedał wtedy Bag End Lobelii i Lotho Sackville-Bagginsom i wyruszył do Rivendell. Po drodze w Bree spotkał Aragorna.
+			W Rivendell Frodo wziął udział w Naradzie u Elronda, gdzie mianowano go Powiernikiem Pierścienia. Jego zadaniem było zniszczenie Pierścienia Saurona w ogniu Orodruiny. Razem z nim wyruszyła Drużyna Pierścienia, z której jedynie Samwise Gamgee, jego ogrodnik, towarzyszył mu do końca wyprawy.
+			Po powrocie do Shire w przeciwieństwie do Meriadoka i Perergrina, którzy stanęli na czele powstania przeciwko Sarumanowi, nie cieszył się popularnością wśród hobbitów. Po niecałych dwóch latach zostawił Bag End Samwise'owi i odpłynął do Amanu wraz z powiernikami Trzech Pierścieni elfów.
+			
+			<h3 id="sam">Sam</h3>
+			Był najmłodszym synem Hamfasta, od którego przejął rolę ogrodnika Bag End, posiadłości Bilba Bagginsa. Ten ostatni rozbudził u Samwise’a fascynację elfami i legendami Śródziemia, dzięki czemu Samwise ochotnie podążył za Frodem do Rivendell w 3018 roku Trzeciej Ery.
+			Podsłuchiwał przebieg narady u Elronda, a następnie został wybrany na członka Drużyny Pierścienia. Po rozpadzie Drużyny w Parth Galen ruszył za Frodem do Mordoru, by w ogniu Góry Przeznaczenia zniszczyć Jedyny Pierścień. Przez pewien czas po walce z Szelobą będąc przekonany, że Frodo nie żyje, nosił Pierścień i stał się na jakiś czas jego Powiernikiem.
+			Po powrocie z wyprawy wziął ślub z Różą Cotton i zamieszkał w Bag End razem z Frodem. W 3021 roku towarzyszył Frodowi w ostatniej podróży, do Mithlondu, skąd Frodo razem z Bilbem, Gandalfem, Elrondem i Galadrielą odpłynął do Amanu.
+			
+			<h3 id="pippin">Pippin</h3>
+			Peregrin I Tuk, w młodości nazywany Pippinem, syn Paladina II Tuka, był najmłodszym uczestnikiem wyprawy mającej na celu zniszczenie Jedynego Pierścienia.
+			Razem z Meriadokiem Brandybuckiem został pojmany przez orków, którzy napadli na Drużynę i zabili broniącego ich Boromira. Orkowie mieli za zadanie poprowadzić ich do Isengardu, lecz zostali pokonani przez oddział rohirrimskiej jazdy Éomera. Podczas walki Pippin wraz z Merrym uciekli do Fangornu, gdzie spotkali Drzewca, z którym się zaprzyjaźnili. Następnie ruszyli z armią entów do Isengardu. Wraz z Gandalfem, Aragornem, Gimlim, Legolasem i oddziałem króla Théodena podążyli na zachód. Na wzgórzu Dol Baran Pippin spojrzał w palantír i nawiązał kontakt z Sauronem.
+			Następnie pojechał z Gandalfem do Minas Tirith w Gondorze, gdzie w imię wdzięczności dla Boromira ofiarował swoje usługi Denethorowi II i został rycerzem Gondoru. Podczas oblężenia Minas Tirith zaalarmował Gandalfa i Beregonda o szaleństwie Denethora, dzięki czemu uratował życie Faramirowi. Potem ruszył wraz z Armią Zachodu na Czarną Bramę i w bitwie zabił trolla, ratując Beregonda.
+			
+			<h3 id="merry">Merry</h3>
+			W 3018 roku Trzeciej Ery towarzyszył Frodowi do Rivendell i tam został członkiem Drużyny Pierścienia. Wraz z drużyną przebył drogę do Parth Galen, gdzie jego oraz Pippina Tuka uprowadzili orkowie. Podążający do Isengardu orkowie zaatakowani zostali przez Rohirrimów pod wodzą Éomera, zaś Merry i Pippin zdołali uciec do Fangornu. Tam udało im się przekonać Drzewca do zaatakowania przez entów Isengardu. Następnie Merry wstąpił na służbę u króla Rohanu Théodena i został jego giermkiem. Wbrew rozkazowi pojechał wraz z Éowiną do Minas Tirith, gdzie wspólnie zabili Czarnoksiężnika z Angmaru podczas bitwy na polach Pelennoru. Bliski śmierci został uzdrowiony przez Aragorna.
+			Po Wojnie o Pierścień pasowany został na rycerza Rohanu. Wraz z Frodem, Samem i Pippinem powrócił do Shire, gdzie był jednym z przywódców podczas Bitwy Nad Wodą przeciwko ludziom Sarumana. Po śmierci ojca został Dziedzicem Bucklandu. Zmarł w Gondorze ok. 64 roku Czwartej Ery i został pochowany obok Aragorna.
+			
+			<h3 id="boromir">Boromir</h3>
+			Był Dúnadanem z Gondoru, starszym synem namiestnika Gondoru Denethora II i Finduilas oraz bratem Faramira. Należał do grupy dziewięciu członków Drużyny Pierścienia.
+			Kierował się dobrem swego kraju. Uwielbiany w swej ojczyźnie, szlachetny i dumny, był jednym z wielkich wodzów Gondoru, następcą Denethora II, cenionym w Gondorze i Rohanie.
+			
+			<h3>Faramir</h3>
+			Był to szlachetny człowiek. W przeciwieństwie do Boromira potrafił się oprzeć pokusie zagarnięcia Pierścienia.
+			Pojawia się w jej kolejnych częściach Władcy Pierścieni: Dwóch wieżach i Powrocie króla. Więcej informacji na jego temat zawierają też Dodatki do trzeciego tomu oraz tom dwunasty Historii Śródziemia.
+			
+		</div>
+		
+		<div id="footer">
+			Grzegorz Sobczuk. Strona w sieci od 2021r. &copy; Wszelkie prawa zastrzeżone
+		</div>
+		
+	</div>
+	
+	<script src="jquery-3.6.0.min.js"></script>
+	
+	<script>
+
+			$(document).ready(function() {
+			var stickyNavTop = $('.menu').offset().top;
+
+			var stickyNav = function(){
+			var scrollTop = $(window).scrollTop();
+
+			if (scrollTop > stickyNavTop) {
+					$('.menu').addClass('sticky');
+			} else {
+					$('.menu').removeClass('sticky');
+			}
+			};
+
+			stickyNav();
+
+			$(window).scroll(function() {
+			stickyNav();
+			});
+			});
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Władca Pierścieni</title>
+	<meta name="description" content="Serwis poświęcony miłośnikom trylogii filmowej 'Władcy Pierścieni' J.R.R. Tolkiena" />
+	<meta name="keywords" content="władca, pierścieni, trylogia, tolkien, fantazy" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link rel = "preconnect" href = "https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script>
+	
+	jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+			
+		}
+		);
+	
+	//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		);
+		
+	</script>
+	
+</head>
+
+<body>
+
+<div id="logo">
+			Władca Pierścieni
+		</div>
+		
+		<a href="#" class="scrollup"></a>
+		
+		<div class="menu">
+			<ol>
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a href="tolkien.html">J.J.R Tolkien</a></li>
+				<li><a href="fabula.html">Fabuła</a>
+					<ul>
+						<li><a href="wladca.html">Dróżyna Pierścienia</a></li>
+						<li><a href="wieze.html">Dwie wieże</a></li>
+						<li><a href="powrot.html">Powrót Króla</a></li>
+					</ul>
+				</li>
+				<li><a href="adaptacje.html">Adaptacje</a>
+					<ul>
+						<li><a href="filmy.html">Filmy</a></li>
+						<li><a href="gry.html">Gry</a></li>
+					</ul>
+				</li>
+				<li><a href="postacie.html">Postacie</a>
+				<ul>
+						<li><a href="pozytywne.html">Pozytywne</a></li>
+						<li><a href="negatywne.html">Negatywne</a></li>
+					</ul>
+				</li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="mapa.html">Mapa świata</a></li>
+			</ol>
+		</div>
+		
+	<div id="container">
+		
+		<div id="topbar">
+			<div id="topbarL">
+				<img src="img/ring.png">
+			</div>
+			<div id="topbarR">
+				<span class="bigtitle">O witrynie słów kilka</span>
+				<div style="height: 15px;"></div>
+				Trylogia 'Władcy Pierścieni' napisana przez J.J.R Tolkiena jest bez wątpienia książką ponadczasową. Dlatego trudno się dziwić, że doczekała się ekranizacji. Ta strona została stworzona z pasji i podziwu dla twórczości J.J.R. Tolkiena.
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		
+		<div id="sidebar">
+			<ol>
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a href="tolkien.html">J.J.R Tolkien</a></li>
+				<li><a href="fabula.html">Fabuła</a>
+					<ul>
+						<li><a href="wladca.html">Dróżyna Pierścienia</a></li>
+						<li><a href="wieze.html">Dwie wieże</a></li>
+						<li><a href="powrot.html">Powrót Króla</a></li>
+					</ul>
+				</li>
+				<li><a href="adaptacje.html">Adaptacje</a>
+					<ul>
+						<li><a href="filmy.html">Filmy</a></li>
+						<li><a href="gry.html">Gry</a></li>
+					</ul>
+				</li>
+				<li><a href="postacie.html">Postacie</a>
+				<ul>
+						<li><a href="pozytywne.html">Pozytywne</a></li>
+						<li><a href="negatywne.html">Negatywne</a></li>
+					</ul>
+				</li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="mapa.html">Mapa świata</a></li>
+			</ol>
+		</div>
+		
+		<div id="sidebarR">
+			<img src="img/reklama.jpg" />
+		</div>
+		
+		<div id="content">
+			<span class="bigtitle">Postacie</span>
+			
+			<div class="dottedline"></div>
+			
+			<ul>
+					<li><a href="pozytywne.html">Pozytywne</a></li>
+					<li><a href="negatywne.html">Negatywne</a></li>
+			</ul>
+			
+		</div>
+		
+		<div id="footer">
+			Grzegorz Sobczuk. Strona w sieci od 2021r. &copy; Wszelkie prawa zastrzeżone
+		</div>
+		
+	</div>
+	
+	<script src="jquery-3.6.0.min.js"></script>
+	
+	<script>
+
+			$(document).ready(function() {
+			var stickyNavTop = $('.menu').offset().top;
+
+			var stickyNav = function(){
+			var scrollTop = $(window).scrollTop();
+
+			if (scrollTop > stickyNavTop) {
+					$('.menu').addClass('sticky');
+			} else {
+					$('.menu').removeClass('sticky');
+			}
+			};
+
+			stickyNav();
+
+			$(window).scroll(function() {
+			stickyNav();
+			});
+			});
+
+	</script>
+
+</body>
+</html>
